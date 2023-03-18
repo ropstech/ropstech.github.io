@@ -71,11 +71,16 @@ html, body {
     margin: 0;
     text-align: center;
   }
-  @media (min-width: 419px) {
+  @media (mmax-width: 520px) {
     h1 {
       font-size: 100px;
       font-size: calc((0.0989119683 * 100vw + (58.5558852621px)));
     }
+    
+      .my-logo {
+      min-width: 60px;
+      min-height: 90px;
+      }
   }
   @media (min-width: 1430px) {
     h1 {
