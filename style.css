@@ -8,7 +8,7 @@ html, body {
   body, body * {
     cursor: none;
   }
-  
+
   .shapes {
     position: relative;
     height: 100vh;
@@ -18,31 +18,34 @@ html, body {
     margin: 0;
     box-sizing: border-box;
   }
-  
+
   .shape {
     will-change: transform;
     position: absolute;
     border-radius: 50%;
   }
+
   .shape.shape-1 {
     background: #4401d5;
     width: 650px;
     height: 650px;
     margin: -325px 0 0 -325px;
   }
+
   .shape.shape-2 {
     background: #40cccb;
     width: 440px;
     height: 440px;
     margin: -220px 0 0 -220px;
   }
+
   .shape.shape-3 {
     background: #FFD400;
     width: 270px;
     height: 270px;
     margin: -135px 0 0 -135px;
   }
-  
+
   .content {
     top: 0;
     left: 0;
@@ -55,39 +58,41 @@ html, body {
     background: #fff;
     mix-blend-mode: screen;
   }
-  
+
   div {
     height: 50vh;
     overflow: hidden;
   }
-  
+
   .spacer {
     height: 50vh;
   }
-  
+
   h1 {
     font-size: 100px;
     color: #000;
     margin: 0;
     text-align: center;
   }
-  @media (mmax-width: 520px) {
+
+  @media (max-width: 520px) {
     h1 {
       font-size: 100px;
       font-size: calc((0.0989119683 * 100vw + (58.5558852621px)));
     }
     
-      .my-logo {
+    .my-logo {
       min-width: 60px;
       min-height: 90px;
-      }
+    }
   }
+
   @media (min-width: 1430px) {
     h1 {
       font-size: 200px;
     }
   }
-  
+
   .cursor {
     position: fixed;
     background: #2c008a;
@@ -97,62 +102,57 @@ html, body {
     border-radius: 50%;
     will-change: transform;
     -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     pointer-events: none;
     z-index: 10000;
   }
-  
+
   ::-moz-selection {
     color: #fff;
     background: #2c008a;
   }
-  
+
   ::selection {
     color: #fff;
     background: #2c008a;
   }
-  
-  
-  
+
   @import 'https://fonts.googleapis.com/css?family=Roboto+Mono:100';
-  
-        .container {
-          height: 100%;
-          width: 100%;
-          justify-content: center;
-          align-items: center;
-          display: flex;
-        }
-  
-        .text {
-          font-weight: 100;
-          font-size: 28px;
-          color: #2c008a;
-          font-family: 'Roboto Mono', monospace;
-  
-        }
-  
-        .dud {
-          color: #4401d5;
-        }
-    
-    
-    img {
+
+  .container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text {
+    font-weight: 100;
+    font-size: 28px;
+    color: #2c008a;
+    font-family: 'Roboto Mono', monospace;
+  }
+
+  .dud {
+    color: #4401d5;
+  }
+
+  img {
     height: 50px;
-    position: absolute;
+    position: fixed;
     top: 10px;
     left: 10px;
     z-index: 1000;
-    }
-    
-    img:hover {
+  }
+
+  img:hover {
     cursor: pointer;
-    pointer-events: auto; /* pointer-events auf auto setzen */
-    }
-  
-    .header {
+    pointer-events: auto;
+  }
+
+  .header {
     position: fixed;
     top: 0;
     width: 100%;
