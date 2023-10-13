@@ -57,6 +57,7 @@ body {
   width: 80%;
   min-height: 650px; /* Adjust the height as needed */
   max-height: 4700px; /* Adjust the height as needed */
+  overflow: auto; /* Enable scrolling if content exceeds max-height */
 }
 .timeline-event-copy h3 {
   font-size: 1.75em;
