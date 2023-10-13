@@ -3,6 +3,7 @@ html, body {
     font-weight: 900;
     margin: 0;
     padding: 0;
+    padding-bottom: 20px;
   }
   
   body, body * {
